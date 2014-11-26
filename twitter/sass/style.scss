@@ -1,6 +1,5 @@
 @import "compass/reset";
 @import "compass/css3";
-
 @import "compass/utilities/";
 
 // var
@@ -47,16 +46,18 @@ $bg-color-blue: #80A8CC;
 
 // font
 .fa {
-  font-size: 1em;
+  font-size: 1rem;
 }
 
 // common
 .circle {
   @include circle();
 }
+
 .circle-large {
   @include circle(80px);
 }
+
 .container {
   margin: 15px 0;
 }
@@ -67,11 +68,13 @@ html, body {
   color: #000;
   background-color: $bg-color-white;
 }
+
 // container
 body {
   position: relative;
   height: 100%;
 }
+
 // header
 header {
   @include debug-bd(red);
@@ -104,7 +107,8 @@ header {
     font-size: 35px;
   }
   .search {
-    padding: 15px 0;
+    height: 65px;
+    line-height: 65px;
     input {
       border: 1px solid #ccc;
       height: 35px;
@@ -135,8 +139,9 @@ section.main {
     position: absolute;
     top: 0;
     left: 0;
-    width: 300px;
+    width: 270px;
     height: 100%;
+    background-color: $bg-color-blue;
   }
   .right {
     position: absolute;
@@ -148,5 +153,78 @@ section.main {
   .content {
     height: 1500px;
   }
+}
 
+.left {
+  .user-info {
+    color: #ffffff;
+    padding: 30px 20px;
+    .circle-large {
+      margin-bottom: 20px;
+      background-color: $bg-color-white;
+      i {
+        color: $bg-color-blue;
+        line-height: 80px;
+      }
+    }
+    strong {
+      font-size: 1.3rem;
+    }
+    p {
+      font-size: 1rem;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      display: block;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    .site {
+      margin-bottom: 15px;
+      &:before {
+        content: ",";
+        margin-right: 10px;
+      }
+    }
+    .follow {
+      width: 50px;
+      padding: 8px 40px;
+      background-color: darken($bg-color-blue, 20%);
+      @include border-radius(17px);
+    }
+  }
+  .pictures {
+    width: 100%;
+    li {
+      @include debug-bd(blue);
+      float: left;
+      width: 90px;
+      height: 90px;
+      @include box-sizing(border-box);
+    }
+  }
+  .activities {
+    padding: 25px 20px;
+    strong, a {
+      color: white;
+    }
+    i, span {
+      color: darken($bg-color-blue, 20%);
+    }
+    ul {
+      margin-top: 10px;
+      li {
+        line-height: 25px;
+      }
+    }
+    span {
+      margin-left: 5px;
+    }
+    a {
+    }
+  }
 }
