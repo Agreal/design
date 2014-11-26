@@ -2,6 +2,12 @@
 @import "compass/css3";
 @import "compass/utilities/";
 
+// var
+$main-bg-color: #F4F4F4;
+$title-white-color: #FEFEFE;
+$text-color: #A3A3A3;
+$title-color: darken($text-color, 25%);
+
 // utils
 @mixin debug-bd($color) {
   border: 1px solid $color;
@@ -59,7 +65,7 @@ body {
 
 .bar {
   height: 35px;
-  background-color: #FFF;
+  background-color: $main-bg-color;
   @include border-radius(10px 10px 0 0);
   li {
     float: left;
@@ -70,18 +76,18 @@ body {
     @include border-radius(15px);
   }
   .close {
-    background-color: red;
+    background-color: #E76747;
   }
   .min {
-    background-color: yellow;
+    background-color: #FAC002;
   }
   .full {
-    background-color: green;
+    background-color: #52BEA6;
   }
 }
 
 .header {
-  color: white;
+  color: $title-white-color;
   padding: 300px 0;
   background-image: url("../img/background.jpg");
   overflow: hidden;
@@ -106,9 +112,9 @@ body {
     h1 {
       font-size: 2em;
     }
-    h3 {
-      margin-top: 10px;
-      font-size: 1.17em;
+    h4 {
+      margin-top: 5px;
+      font-size: 1em;
     }
   }
   .search {
@@ -134,52 +140,63 @@ body {
     @include border-radius(3px 0 0 3px);
     @include input-placeholder {
       font-size: 1.1em;
-      color: lighten(#ffffff, 10%);
+      color: $title-white-color;
     }
   }
   input[type='button'] {
     width: 120px;
-    color: #ffffff;
+    color: $title-white-color;
     font-size: 1.1em;
-    background-color: darken(green, 1%);
+    background-color: #67DDAB;
     @include box-sizing(border-box);
     @include border-radius(0 3px 3px 0);
   }
 }
 
 .main {
-  background-color: #fff;
-  .numbers {
-    color: #000000;
-    position: relative;
-    top: -75px;
-    li {
-      background-color: #ffffff;
-      float: left;
-      width: 25%;
-      margin: auto;
-      padding: 50px 0;
+  background-color: $main-bg-color;
+  .underline {
+    &:after {
+      content: " ";
+      display: block;
       position: relative;
+      margin: 5px auto 0;
       text-align: center;
-      border-left: 1px solid #ccc;
-      border-top: 1px solid #ccc;
-      border-bottom: 1px solid #ccc;
-      @include box-sizing(border-box);
-      strong {
-        display: block;
-        font-size: 1.5em;
-        font-weight: bold;
-      }
-      &:first-child {
-        @include border-radius(5px 0 0 5px);
-      }
-      &:last-child {
-        border-right: 1px solid #ccc;
-        @include border-radius(0 5px 5px 0);
-      }
+      width: 40px;
+      border: 1px solid #ccc;
     }
   }
+}
 
+.numbers {
+  color: #000000;
+  position: relative;
+  top: -75px;
+  li {
+    background-color: #ffffff;
+    float: left;
+    width: 25%;
+    margin: auto;
+    padding: 50px 0;
+    position: relative;
+    text-align: center;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    @include box-sizing(border-box);
+    strong {
+      display: block;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    &:first-child {
+      @include border-radius(5px 0 0 5px);
+    }
+    &:last-child {
+      border-right: 1px solid #ccc;
+      @include border-radius(0 5px 5px 0);
+    }
+  }
 }
 
 .how-it-works {
@@ -187,10 +204,12 @@ body {
 }
 
 .why-choose-us {
-  background-color: #ffffff;
+  background-color: $main-bg-color;
+  border-top: 1px solid #ccc;
   padding-top: 30px;
   padding-bottom: 30px;
   h3 {
+    color: darken($text-color, 25%);
     font-size: 1.5em;
     text-transform: uppercase;
     text-align: center;
@@ -202,6 +221,25 @@ body {
       font-size: 2em;
     }
   }
+  .icon-checkmark {
+    color: #66BE93;
+  }
+  .icon-tag {
+    color: #01B4EA;
+  }
+  .icon-loop {
+    color: #ECB06A;
+  }
+  .icon-user {
+    color: #AF7AC4;
+  }
+  .icon-clipboard {
+    color: #F26D7E;
+  }
+  .icon-thumbsup {
+    color: #ED7F5B;
+  }
+
   li {
     float: left;
     width: 50%;
@@ -213,24 +251,28 @@ body {
       top: 20px;
       position: absolute;
     }
-    h4 {
-      font-size: 1.5em;
-      margin-bottom: 15px;
+    strong {
+      color: $title-color;
+      font-size: 1.2em;
+      font-weight: bold;
+      text-transform: uppercase;
+      text-align: center;
     }
     p {
-
+      color: $text-color;
+      margin-top: 10px;
     }
   }
 }
 
 // footer
 footer {
-  background-color: #fff;
+  background-color: $main-bg-color;
   @include border-radius(0 0 10px 10px);
 }
 
 .foot-search {
-  color: #ffffff;
+  color: $title-white-color;
   padding-top: 60px;
   padding-bottom: 60px;
   background-image: url("../img/background.jpg");
@@ -241,6 +283,7 @@ footer {
   }
   .search-box {
     label {
+      color: $title-white-color;
       font-size: 1.5em;
       margin-right: 1em;
       vertical-align: middle;
@@ -249,22 +292,35 @@ footer {
 }
 
 .links {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   li {
     float: left;
     margin-left: 10px;
+    font-size: 1.1em;
+    line-height: 1.4em;
+    vertical-align: middle;
+    a {
+      text-decoration: none;
+      color: $text-color;
+    }
   }
   .link-self {
     margin-left: 10px;
+    a:hover {
+      text-decoration: underline;
+    }
   }
   .link-3rd {
     margin-right: 10px;
-    .icon-facebook {
-      color: blue;
+    .fa {
+      font-size: 1.4em;
     }
     .icon-twitter {
-      color: blue;
+      color: #4D99CB;
+    }
+    .icon-facebook {
+      color: #4E75B7;
     }
   }
 }
