@@ -173,7 +173,7 @@ body {
   position: relative;
   top: -75px;
   li {
-    background-color: #ffffff;
+    background-color: $main-bg-color;
     float: left;
     width: 25%;
     margin: auto;
@@ -188,6 +188,9 @@ body {
       display: block;
       font-size: 1.5em;
       font-weight: bold;
+    }
+    span {
+      color: $text-color;
     }
     &:first-child {
       @include border-radius(5px 0 0 5px);
