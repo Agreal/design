@@ -14,8 +14,8 @@ $title-color: darken($text-color, 25%);
 }
 
 .fn-center {
-  border-left: auto;
-  border-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   text-align: center;
 }
 
@@ -204,7 +204,6 @@ body {
 }
 
 .why-choose-us {
-  background-color: $main-bg-color;
   border-top: 1px solid #ccc;
   padding-top: 30px;
   padding-bottom: 30px;
@@ -264,6 +263,67 @@ body {
     }
   }
 }
+
+//
+.members {
+  border-top: 1px solid #ccc;
+  padding-top: 70px;
+  padding-bottom: 70px;
+  color: #60677A;
+  .tabs {
+    width: 50%;
+    div {
+      float: left;
+      width: 50%;
+      padding: 15px;
+      font-size: 1.3em;
+      color: #60677A;
+      border: 1px solid #60677A;
+      @include box-sizing(border-box);
+      &.active {
+        background-color: #60677A;
+        color: $title-white-color;
+      }
+      &:first-child {
+        @include border-radius(3px 0 0 3px);
+      }
+      &:last-child {
+        @include border-radius(0 3px 3px 0);
+      }
+    }
+  }
+  p {
+    margin-top: 30px;
+    font-size: 1.2em;
+    &:before {
+      content: "\"";
+      display: block;
+      margin-bottom: 5px;
+      height: 1em;
+    }
+  }
+  .member-info {
+    width: 60%;
+    margin-top: 20px;
+    .member-box {
+      float: left;
+      width: 33.333333%;
+      color: #60677A;
+      padding: 10px;
+      @include box-sizing(border-box);
+      .name {
+        font-weight: bold;
+        display: block;
+      }
+      .position {
+        display: block;
+        margin-bottom: 15px;
+        color: $text-color;
+      }
+    }
+  }
+}
+
 
 // footer
 footer {
