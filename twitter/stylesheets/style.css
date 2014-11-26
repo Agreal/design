@@ -173,19 +173,15 @@ header .bar .circle {
 }
 /* line 101, ../sass/style.scss */
 header .logo {
-  padding: 14px;
-  line-height: 35px;
-}
-/* line 104, ../sass/style.scss */
-header .logo i {
+  line-height: 65px;
   color: #80A8CC;
   font-size: 35px;
 }
-/* line 109, ../sass/style.scss */
+/* line 106, ../sass/style.scss */
 header .search {
   padding: 15px 0;
 }
-/* line 111, ../sass/style.scss */
+/* line 108, ../sass/style.scss */
 header .search input {
   border: 1px solid #ccc;
   height: 35px;
@@ -211,23 +207,23 @@ header .search input:-ms-input-placeholder {
 header .search input::-webkit-input-placeholder {
   color: #ccc;
 }
-/* line 122, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 header .user {
   padding: 15px;
   margin-right: 5px;
 }
-/* line 125, ../sass/style.scss */
+/* line 122, ../sass/style.scss */
 header .user .circle {
   background-color: #80A8CC;
 }
 
-/* line 132, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 section.main {
   position: relative;
   padding: 0 300px;
   height: 100%;
 }
-/* line 137, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 section.main .left {
   position: absolute;
   top: 0;
@@ -235,7 +231,7 @@ section.main .left {
   width: 300px;
   height: 100%;
 }
-/* line 144, ../sass/style.scss */
+/* line 141, ../sass/style.scss */
 section.main .right {
   position: absolute;
   top: 0;
@@ -243,7 +239,7 @@ section.main .right {
   width: 300px;
   height: 100%;
 }
-/* line 151, ../sass/style.scss */
+/* line 148, ../sass/style.scss */
 section.main .content {
   height: 1500px;
 }
