@@ -1,0 +1,315 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+html, body {
+  min-width: 1020px;
+  font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  color: #000;
+  background-color: #f4d18f;
+}
+
+body {
+  margin: 50px;
+}
+
+.container {
+  background-color: #fff;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+}
+.container .ctn {
+  padding-left: 150px;
+  padding-right: 150px;
+}
+
+.bar {
+  height: 35px;
+  background-color: #FFF;
+  -moz-border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px;
+  border-radius: 10px 10px 0 0;
+}
+.bar li {
+  float: left;
+  width: 15px;
+  height: 15px;
+  margin-top: 10px;
+  margin-left: 10px;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+.bar .close {
+  background-color: red;
+}
+.bar .min {
+  background-color: yellow;
+}
+.bar .full {
+  background-color: green;
+}
+
+.header {
+  color: white;
+  padding: 200px 0;
+  background-image: url("../img/background.jpg");
+  overflow: hidden;
+  position: relative;
+  z-index: 0;
+}
+.header .login {
+  position: absolute;
+  top: 30px;
+  right: 150px;
+}
+.header .login .lg-item {
+  margin-right: 10px;
+}
+.header .login .sign-up {
+  margin-left: 20px;
+  padding: 8px 25px;
+  border: 1px solid #ccc;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.header .title {
+  text-align: center;
+}
+.header .title h1 {
+  font-size: 2em;
+}
+.header .title h3 {
+  margin-top: 10px;
+  font-size: 1.17em;
+}
+.header .search {
+  margin: 20px auto 0;
+  text-align: center;
+}
+.header .numbers {
+  position: absolute;
+  bottom: -74px;
+  left: 150px;
+  right: 150px;
+  color: #000000;
+  z-index: 1;
+}
+.header .numbers li {
+  background-color: #ffffff;
+  float: left;
+  width: 25%;
+  margin: auto;
+  padding: 50px 0;
+  text-align: center;
+  border-left: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.header .numbers li strong {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.header .numbers li p {
+  margin-top: 10px;
+}
+.header .numbers li:first-child {
+  -moz-border-radius: 5px 0 0 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px 0 0 5px;
+}
+.header .numbers li:last-child {
+  border-right: 1px solid #ccc;
+  -moz-border-radius: 0 5px 5px 0;
+  -webkit-border-radius: 0;
+  border-radius: 0 5px 5px 0;
+}
+
+.search-group {
+  height: 50px;
+  width: 600px;
+  position: relative;
+}
+.search-group input {
+  height: 100%;
+  border: none;
+  line-height: 1em;
+  vertical-align: middle;
+  padding: 0 15px;
+}
+.search-group input[type='text'] {
+  position: absolute;
+  left: 0;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.25);
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 3px 0 0 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px 0 0 3px;
+}
+.search-group input[type='text']:-moz-placeholder {
+  font-size: 1.1em;
+  color: white;
+}
+.search-group input[type='text']::-moz-placeholder {
+  font-size: 1.1em;
+  color: white;
+}
+.search-group input[type='text']:-ms-input-placeholder {
+  font-size: 1.1em;
+  color: white;
+}
+.search-group input[type='text']::-webkit-input-placeholder {
+  font-size: 1.1em;
+  color: white;
+}
+.search-group input[type='button'] {
+  position: absolute;
+  right: 0;
+  width: 20%;
+  color: #ffffff;
+  font-size: 1.1em;
+  background-color: #007b00;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-border-radius: 0 3px 3px 0;
+  -webkit-border-radius: 0;
+  border-radius: 0 3px 3px 0;
+}
+
+.how-it-works {
+  margin-top: 100px;
+}
+
+.why-choose-us {
+  background-color: #ffffff;
+}
+.why-choose-us h3 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 2em auto;
+}
+.why-choose-us li {
+  float: left;
+  width: 50%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 1em 1em 1em 5em;
+  border: 1px solid red;
+  position: relative;
+}
+.why-choose-us li i {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 1em;
+  background-color: red;
+}
+.why-choose-us li h4 {
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.foot-search {
+  height: 200px;
+}
+
+footer {
+  height: 50px;
+  background-color: #fff;
+  -moz-border-radius: 0 0 10px 10px;
+  -webkit-border-radius: 0;
+  border-radius: 0 0 10px 10px;
+}
+footer li {
+  float: left;
+  margin-left: 15px;
+}
+footer .link-self {
+  float: left;
+  margin-top: 15px;
+}
+footer .link-3rd {
+  float: right;
+  margin-top: 15px;
+}
+
+.center {
+  border-left: auto;
+  border-right: auto;
+  text-align: center;
+}
+
+.clearfix {
+  overflow: hidden;
+  *zoom: 1;
+}
+.clearfix:before, .clearfix:after {
+  content: " ";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
