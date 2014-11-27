@@ -6,6 +6,7 @@
 $bg-color-white: #FFFBF5;
 $bg-color-white-darken: #F2EEE8;
 $bg-color-blue: #80A8CC;
+$text-color-default: #8D8B86;
 
 // utils
 @mixin debug-bd($color) {
@@ -147,7 +148,7 @@ section.main {
     position: absolute;
     top: 0;
     right: 0;
-    width: 300px;
+    width: 250px;
     height: 100%;
   }
   .content {
@@ -225,6 +226,29 @@ section.main {
       margin-left: 5px;
     }
     a {
+    }
+  }
+
+}
+
+.right{
+  .trends{
+    padding: 25px 20px;
+    strong{
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      color: $text-color-default;
+    }
+    ul{
+      margin-top: 15px;
+      a{
+        line-height: 1.5rem;
+        color: $bg-color-blue;
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
     }
   }
 }
