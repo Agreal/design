@@ -5,8 +5,10 @@
 // var
 $bg-color-white: #FFFBF5;
 $bg-color-white-darken: #F2EEE8;
+$bg-content-color: #F2EEE8;
 $bg-color-blue: #80A8CC;
 $text-color-default: #8D8B86;
+$text-color-lighten: #CAC5B6;
 
 // utils
 @mixin debug-bd($color) {
@@ -133,7 +135,7 @@ header {
 /* main layout */
 section.main {
   position: relative;
-  padding: 0 300px;
+  padding: 0 300px 0 270px;
   height: 100%;
 
   .left {
@@ -152,7 +154,18 @@ section.main {
     height: 100%;
   }
   .content {
-    height: 1500px;
+    padding: 25px;
+    background-color: $bg-content-color;
+  }
+  .content-box{
+    margin-top: 25px;
+    background-color: $bg-color-white;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    >li {
+      border-bottom: 1px solid #cccccc;
+    }
   }
 }
 
@@ -230,4 +243,47 @@ section.main {
   }
 
 
-// center
+/* center */
+.twitter{
+  position: relative;
+  padding: 2rem 2rem 2rem 6rem;
+  font-weight: lighter;
+  .circle {
+    background-color: $bg-color-blue;
+  }
+  .user{
+    position: absolute;
+    left: 2rem;
+  }
+  .name{
+    font-weight: bold;
+  }
+  .at{
+    color: $text-color-lighten;
+  }
+  .time{
+    color: $text-color-lighten;
+  }
+  p{
+    margin: 0.5rem 0 1rem;
+    line-height: 1.5rem;
+  }
+  li{
+    float: left;
+    margin-right: 1rem;
+    &.last{
+      float: right;
+      margin-right: 0;
+    }
+    i {
+      color: $text-color-lighten;
+      cursor: pointer;
+      &:hover{
+        color: inherit;
+      }
+      span {
+        margin-left: 0.3rem;
+      }
+    }
+  }
+}
