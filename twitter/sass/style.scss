@@ -6,6 +6,7 @@
 $bg-color-white: #FFFBF5;
 $bg-color-white-darken: #F2EEE8;
 $bg-color-blue: #80A8CC;
+$text-color-default: #8D8B86;
 
 // utils
 @mixin debug-bd($color) {
@@ -77,7 +78,7 @@ body {
 
 // header
 header {
-  @include debug-bd(red);
+  border-bottom: 1px solid $bg-color-white-darken;
   .circle {
     text-align: center;
     i {
@@ -85,7 +86,7 @@ header {
     }
   }
   .menu {
-    border-right: 1px solid #ccc;
+    border-right: 1px solid $bg-color-white-darken;
     padding: 15px;
     .circle {
       background-color: $bg-color-blue;
@@ -129,7 +130,7 @@ header {
   }
 }
 
-// main
+/* main layout */
 section.main {
   position: relative;
   padding: 0 300px;
@@ -155,59 +156,59 @@ section.main {
   }
 }
 
-.left {
-  .user-info {
+/* left side */
+.user-info {
+  color: #ffffff;
+  padding: 30px 20px;
+  .circle-large {
+    margin-bottom: 20px;
+    background-color: $bg-color-white;
+    i {
+      color: $bg-color-blue;
+      line-height: 80px;
+    }
+  }
+  strong {
+    font-size: 1.3rem;
+  }
+  p {
+    font-size: 1rem;
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+  a {
     color: #ffffff;
-    padding: 30px 20px;
-    .circle-large {
-      margin-bottom: 20px;
-      background-color: $bg-color-white;
-      i {
-        color: $bg-color-blue;
-        line-height: 80px;
-      }
-    }
-    strong {
-      font-size: 1.3rem;
-    }
-    p {
-      font-size: 1rem;
-      margin-top: 10px;
-      margin-bottom: 20px;
-    }
-    a {
-      color: #ffffff;
-      text-decoration: none;
-      display: block;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-    .site {
-      margin-bottom: 15px;
-      &:before {
-        content: ",";
-        margin-right: 10px;
-      }
-    }
-    .follow {
-      width: 50px;
-      padding: 8px 40px;
-      background-color: darken($bg-color-blue, 20%);
-      @include border-radius(17px);
+    text-decoration: none;
+    display: block;
+    &:hover {
+      text-decoration: underline;
     }
   }
-  .pictures {
-    width: 100%;
-    li {
-      @include debug-bd(blue);
-      float: left;
-      width: 90px;
-      height: 90px;
-      @include box-sizing(border-box);
+  .site {
+    margin-bottom: 15px;
+    &:before {
+      content: ",";
+      margin-right: 10px;
     }
   }
-  .activities {
+  .follow {
+    width: 50px;
+    padding: 8px 40px;
+    background-color: darken($bg-color-blue, 20%);
+    @include border-radius(17px);
+  }
+}
+.pictures {
+  width: 100%;
+  li {
+    @include debug-bd(blue);
+    float: left;
+    width: 90px;
+    height: 90px;
+    @include box-sizing(border-box);
+  }
+}
+.activities {
     padding: 25px 20px;
     strong, a {
       color: white;
@@ -227,4 +228,6 @@ section.main {
     a {
     }
   }
-}
+
+
+// center

@@ -63,44 +63,44 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 21, ../sass/style.scss */
+/* line 22, ../sass/style.scss */
 .fn-center {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
-/* line 27, ../sass/style.scss */
+/* line 28, ../sass/style.scss */
 .fn-left {
   float: left;
 }
 
-/* line 31, ../sass/style.scss */
+/* line 32, ../sass/style.scss */
 .fn-right {
   float: right;
 }
 
-/* line 35, ../sass/style.scss */
+/* line 36, ../sass/style.scss */
 .clearfix {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 36, ../sass/style.scss */
+/* line 37, ../sass/style.scss */
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table;
 }
-/* line 41, ../sass/style.scss */
+/* line 42, ../sass/style.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 48, ../sass/style.scss */
+/* line 49, ../sass/style.scss */
 .fa {
   font-size: 1rem;
 }
 
-/* line 53, ../sass/style.scss */
+/* line 54, ../sass/style.scss */
 .circle {
   width: 35px;
   height: 35px;
@@ -109,7 +109,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-radius: 35px / 35px;
 }
 
-/* line 57, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 .circle-large {
   width: 80px;
   height: 80px;
@@ -118,12 +118,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   border-radius: 80px / 80px;
 }
 
-/* line 61, ../sass/style.scss */
+/* line 62, ../sass/style.scss */
 .container {
   margin: 15px 0;
 }
 
-/* line 65, ../sass/style.scss */
+/* line 66, ../sass/style.scss */
 html, body {
   min-width: 1020px;
   font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
@@ -131,58 +131,58 @@ html, body {
   background-color: #FFFBF5;
 }
 
-/* line 73, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 body {
   position: relative;
   height: 100%;
 }
 
-/* line 79, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
 header {
-  border: 1px solid red;
+  border-bottom: 1px solid #F2EEE8;
 }
-/* line 81, ../sass/style.scss */
+/* line 82, ../sass/style.scss */
 header .circle {
   text-align: center;
 }
-/* line 83, ../sass/style.scss */
+/* line 84, ../sass/style.scss */
 header .circle i {
   line-height: 35px;
 }
-/* line 87, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 header .menu {
-  border-right: 1px solid #ccc;
+  border-right: 1px solid #F2EEE8;
   padding: 15px;
 }
-/* line 90, ../sass/style.scss */
+/* line 91, ../sass/style.scss */
 header .menu .circle {
   background-color: #80A8CC;
 }
-/* line 94, ../sass/style.scss */
+/* line 95, ../sass/style.scss */
 header .bar {
   padding: 14px;
 }
-/* line 96, ../sass/style.scss */
+/* line 97, ../sass/style.scss */
 header .bar li {
   float: left;
   margin-right: 15px;
 }
-/* line 100, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 header .bar .circle {
   border: 1px solid #F2EEE8;
 }
-/* line 104, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 header .logo {
   line-height: 65px;
   color: #80A8CC;
   font-size: 35px;
 }
-/* line 109, ../sass/style.scss */
+/* line 110, ../sass/style.scss */
 header .search {
   height: 65px;
   line-height: 65px;
 }
-/* line 112, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 header .search input {
   border: 1px solid #ccc;
   height: 35px;
@@ -208,23 +208,24 @@ header .search input:-ms-input-placeholder {
 header .search input::-webkit-input-placeholder {
   color: #ccc;
 }
-/* line 123, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 header .user {
   padding: 15px;
   margin-right: 5px;
 }
-/* line 126, ../sass/style.scss */
+/* line 127, ../sass/style.scss */
 header .user .circle {
   background-color: #80A8CC;
 }
 
-/* line 133, ../sass/style.scss */
+/* main layout */
+/* line 134, ../sass/style.scss */
 section.main {
   position: relative;
   padding: 0 300px;
   height: 100%;
 }
-/* line 138, ../sass/style.scss */
+/* line 139, ../sass/style.scss */
 section.main .left {
   position: absolute;
   top: 0;
@@ -233,7 +234,7 @@ section.main .left {
   height: 100%;
   background-color: #80A8CC;
 }
-/* line 146, ../sass/style.scss */
+/* line 147, ../sass/style.scss */
 section.main .right {
   position: absolute;
   top: 0;
@@ -241,57 +242,58 @@ section.main .right {
   width: 300px;
   height: 100%;
 }
-/* line 153, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 section.main .content {
   height: 1500px;
 }
 
-/* line 159, ../sass/style.scss */
-.left .user-info {
+/* left side */
+/* line 160, ../sass/style.scss */
+.user-info {
   color: #ffffff;
   padding: 30px 20px;
 }
-/* line 162, ../sass/style.scss */
-.left .user-info .circle-large {
+/* line 163, ../sass/style.scss */
+.user-info .circle-large {
   margin-bottom: 20px;
   background-color: #FFFBF5;
 }
-/* line 165, ../sass/style.scss */
-.left .user-info .circle-large i {
+/* line 166, ../sass/style.scss */
+.user-info .circle-large i {
   color: #80A8CC;
   line-height: 80px;
 }
-/* line 170, ../sass/style.scss */
-.left .user-info strong {
+/* line 171, ../sass/style.scss */
+.user-info strong {
   font-size: 1.3rem;
 }
-/* line 173, ../sass/style.scss */
-.left .user-info p {
+/* line 174, ../sass/style.scss */
+.user-info p {
   font-size: 1rem;
   margin-top: 10px;
   margin-bottom: 20px;
 }
-/* line 178, ../sass/style.scss */
-.left .user-info a {
+/* line 179, ../sass/style.scss */
+.user-info a {
   color: #ffffff;
   text-decoration: none;
   display: block;
 }
-/* line 182, ../sass/style.scss */
-.left .user-info a:hover {
+/* line 183, ../sass/style.scss */
+.user-info a:hover {
   text-decoration: underline;
 }
-/* line 186, ../sass/style.scss */
-.left .user-info .site {
+/* line 187, ../sass/style.scss */
+.user-info .site {
   margin-bottom: 15px;
 }
-/* line 188, ../sass/style.scss */
-.left .user-info .site:before {
+/* line 189, ../sass/style.scss */
+.user-info .site:before {
   content: ",";
   margin-right: 10px;
 }
-/* line 193, ../sass/style.scss */
-.left .user-info .follow {
+/* line 194, ../sass/style.scss */
+.user-info .follow {
   width: 50px;
   padding: 8px 40px;
   background-color: #4276a4;
@@ -299,12 +301,13 @@ section.main .content {
   -webkit-border-radius: 17px;
   border-radius: 17px;
 }
-/* line 200, ../sass/style.scss */
-.left .pictures {
+
+/* line 201, ../sass/style.scss */
+.pictures {
   width: 100%;
 }
-/* line 202, ../sass/style.scss */
-.left .pictures li {
+/* line 203, ../sass/style.scss */
+.pictures li {
   border: 1px solid blue;
   float: left;
   width: 90px;
@@ -313,27 +316,28 @@ section.main .content {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 210, ../sass/style.scss */
-.left .activities {
+
+/* line 211, ../sass/style.scss */
+.activities {
   padding: 25px 20px;
 }
-/* line 212, ../sass/style.scss */
-.left .activities strong, .left .activities a {
+/* line 213, ../sass/style.scss */
+.activities strong, .activities a {
   color: white;
 }
-/* line 215, ../sass/style.scss */
-.left .activities i, .left .activities span {
+/* line 216, ../sass/style.scss */
+.activities i, .activities span {
   color: #4276a4;
 }
-/* line 218, ../sass/style.scss */
-.left .activities ul {
+/* line 219, ../sass/style.scss */
+.activities ul {
   margin-top: 10px;
 }
-/* line 220, ../sass/style.scss */
-.left .activities ul li {
+/* line 221, ../sass/style.scss */
+.activities ul li {
   line-height: 25px;
 }
-/* line 224, ../sass/style.scss */
-.left .activities span {
+/* line 225, ../sass/style.scss */
+.activities span {
   margin-left: 5px;
 }
