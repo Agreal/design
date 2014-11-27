@@ -76,6 +76,45 @@ html, body {
 body {
   position: relative;
   height: 100%;
+  font-weight: lighter;
+}
+
+
+/* main layout */
+section.main {
+  position: relative;
+  padding: 0 300px 0 270px;
+  height: 100%;
+
+  .left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 270px;
+    height: 100%;
+    background-color: $bg-color-blue;
+  }
+  .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+  }
+  .content {
+    padding: 25px;
+    background-color: $bg-content-color;
+  }
+  .content-box {
+    margin-top: 25px;
+    background-color: $bg-color-white;
+    border-top: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    border-right: 1px solid #cccccc;
+    > li {
+      border-bottom: 1px solid #cccccc;
+    }
+  }
 }
 
 // header
@@ -132,43 +171,6 @@ header {
   }
 }
 
-/* main layout */
-section.main {
-  position: relative;
-  padding: 0 300px 0 270px;
-  height: 100%;
-
-  .left {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 270px;
-    height: 100%;
-    background-color: $bg-color-blue;
-  }
-  .right {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 300px;
-    height: 100%;
-  }
-  .content {
-    padding: 25px;
-    background-color: $bg-content-color;
-  }
-  .content-box{
-    margin-top: 25px;
-    background-color: $bg-color-white;
-    border-top: 1px solid #cccccc;
-    border-left: 1px solid #cccccc;
-    border-right: 1px solid #cccccc;
-    >li {
-      border-bottom: 1px solid #cccccc;
-    }
-  }
-}
-
 /* left side */
 .user-info {
   color: #ffffff;
@@ -211,6 +213,7 @@ section.main {
     @include border-radius(17px);
   }
 }
+
 .pictures {
   width: 100%;
   li {
@@ -221,64 +224,89 @@ section.main {
     @include box-sizing(border-box);
   }
 }
+
 .activities {
-    padding: 25px 20px;
-    strong, a {
-      color: white;
-    }
-    i, span {
-      color: darken($bg-color-blue, 20%);
-    }
-    ul {
-      margin-top: 10px;
-      li {
-        line-height: 25px;
-      }
-    }
-    span {
-      margin-left: 5px;
-    }
-    a {
+  padding: 25px 20px;
+  strong, a {
+    color: white;
+  }
+  i, span {
+    color: darken($bg-color-blue, 20%);
+  }
+  ul {
+    margin-top: 10px;
+    li {
+      line-height: 25px;
     }
   }
+  span {
+    margin-left: 5px;
+  }
+  a {
+  }
+}
 
 
 /* center */
-.twitter{
+.twitter-numbers {
+//  border: 1px solid #ccc;
+  background-color: $bg-color-white;
+  border: 1px solid #ccc;
+  li {
+    float: left;
+    width: 25%;
+    padding: 20px 0;
+    &.active {
+      border-bottom: 5px solid $bg-color-blue;
+    }
+  }
+  span {
+    color: $text-color-default;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+  strong {
+    display: block;
+    margin-top: 0.3rem;
+    font-weight: bold;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+  }
+}
+.twitter {
   position: relative;
   padding: 2rem 2rem 2rem 6rem;
-  font-weight: lighter;
   .circle {
     background-color: $bg-color-blue;
   }
-  .user{
+  .user {
     position: absolute;
     left: 2rem;
   }
-  .name{
+  .name {
     font-weight: bold;
   }
-  .at{
+  .at {
     color: $text-color-lighten;
   }
-  .time{
+  .time {
     color: $text-color-lighten;
   }
-  p{
+  p {
     margin: 0.5rem 0 1rem;
     line-height: 1.5rem;
   }
-  li{
+  li {
     float: left;
     margin-right: 1rem;
-    &.last{
+    &.last {
       float: right;
       margin-right: 0;
     }
     i {
       color: $text-color-lighten;
       cursor: pointer;
-      &:hover{
+      &:hover {
         color: inherit;
       }
       span {

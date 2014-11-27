@@ -135,54 +135,97 @@ html, body {
 body {
   position: relative;
   height: 100%;
+  font-weight: lighter;
 }
 
-/* line 82, ../sass/style.scss */
+/* main layout */
+/* line 84, ../sass/style.scss */
+section.main {
+  position: relative;
+  padding: 0 300px 0 270px;
+  height: 100%;
+}
+/* line 89, ../sass/style.scss */
+section.main .left {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 270px;
+  height: 100%;
+  background-color: #80A8CC;
+}
+/* line 97, ../sass/style.scss */
+section.main .right {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 300px;
+  height: 100%;
+}
+/* line 104, ../sass/style.scss */
+section.main .content {
+  padding: 25px;
+  background-color: #F2EEE8;
+}
+/* line 108, ../sass/style.scss */
+section.main .content-box {
+  margin-top: 25px;
+  background-color: #FFFBF5;
+  border-top: 1px solid #cccccc;
+  border-left: 1px solid #cccccc;
+  border-right: 1px solid #cccccc;
+}
+/* line 114, ../sass/style.scss */
+section.main .content-box > li {
+  border-bottom: 1px solid #cccccc;
+}
+
+/* line 121, ../sass/style.scss */
 header {
   border-bottom: 1px solid #F2EEE8;
 }
-/* line 84, ../sass/style.scss */
+/* line 123, ../sass/style.scss */
 header .circle {
   text-align: center;
 }
-/* line 86, ../sass/style.scss */
+/* line 125, ../sass/style.scss */
 header .circle i {
   line-height: 35px;
 }
-/* line 90, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 header .menu {
   border-right: 1px solid #F2EEE8;
   padding: 15px;
 }
-/* line 93, ../sass/style.scss */
+/* line 132, ../sass/style.scss */
 header .menu .circle {
   background-color: #80A8CC;
 }
-/* line 97, ../sass/style.scss */
+/* line 136, ../sass/style.scss */
 header .bar {
   padding: 14px;
 }
-/* line 99, ../sass/style.scss */
+/* line 138, ../sass/style.scss */
 header .bar li {
   float: left;
   margin-right: 15px;
 }
-/* line 103, ../sass/style.scss */
+/* line 142, ../sass/style.scss */
 header .bar .circle {
   border: 1px solid #F2EEE8;
 }
-/* line 107, ../sass/style.scss */
+/* line 146, ../sass/style.scss */
 header .logo {
   line-height: 65px;
   color: #80A8CC;
   font-size: 35px;
 }
-/* line 112, ../sass/style.scss */
+/* line 151, ../sass/style.scss */
 header .search {
   height: 65px;
   line-height: 65px;
 }
-/* line 115, ../sass/style.scss */
+/* line 154, ../sass/style.scss */
 header .search input {
   border: 1px solid #ccc;
   height: 35px;
@@ -208,104 +251,62 @@ header .search input:-ms-input-placeholder {
 header .search input::-webkit-input-placeholder {
   color: #ccc;
 }
-/* line 126, ../sass/style.scss */
+/* line 165, ../sass/style.scss */
 header .user {
   padding: 15px;
   margin-right: 5px;
 }
-/* line 129, ../sass/style.scss */
+/* line 168, ../sass/style.scss */
 header .user .circle {
   background-color: #80A8CC;
 }
 
-/* main layout */
-/* line 136, ../sass/style.scss */
-section.main {
-  position: relative;
-  padding: 0 300px 0 270px;
-  height: 100%;
-}
-/* line 141, ../sass/style.scss */
-section.main .left {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 270px;
-  height: 100%;
-  background-color: #80A8CC;
-}
-/* line 149, ../sass/style.scss */
-section.main .right {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 300px;
-  height: 100%;
-}
-/* line 156, ../sass/style.scss */
-section.main .content {
-  padding: 25px;
-  background-color: #F2EEE8;
-}
-/* line 160, ../sass/style.scss */
-section.main .content-box {
-  margin-top: 25px;
-  background-color: #FFFBF5;
-  border-top: 1px solid #cccccc;
-  border-left: 1px solid #cccccc;
-  border-right: 1px solid #cccccc;
-}
-/* line 166, ../sass/style.scss */
-section.main .content-box > li {
-  border-bottom: 1px solid #cccccc;
-}
-
 /* left side */
-/* line 173, ../sass/style.scss */
+/* line 175, ../sass/style.scss */
 .user-info {
   color: #ffffff;
   padding: 30px 20px;
 }
-/* line 176, ../sass/style.scss */
+/* line 178, ../sass/style.scss */
 .user-info .circle-large {
   margin-bottom: 20px;
   background-color: #FFFBF5;
 }
-/* line 179, ../sass/style.scss */
+/* line 181, ../sass/style.scss */
 .user-info .circle-large i {
   color: #80A8CC;
   line-height: 80px;
 }
-/* line 184, ../sass/style.scss */
+/* line 186, ../sass/style.scss */
 .user-info strong {
   font-size: 1.3rem;
 }
-/* line 187, ../sass/style.scss */
+/* line 189, ../sass/style.scss */
 .user-info p {
   font-size: 1rem;
   margin-top: 10px;
   margin-bottom: 20px;
 }
-/* line 192, ../sass/style.scss */
+/* line 194, ../sass/style.scss */
 .user-info a {
   color: #ffffff;
   text-decoration: none;
   display: block;
 }
-/* line 196, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 .user-info a:hover {
   text-decoration: underline;
 }
-/* line 200, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 .user-info .site {
   margin-bottom: 15px;
 }
-/* line 202, ../sass/style.scss */
+/* line 204, ../sass/style.scss */
 .user-info .site:before {
   content: ",";
   margin-right: 10px;
 }
-/* line 207, ../sass/style.scss */
+/* line 209, ../sass/style.scss */
 .user-info .follow {
   width: 50px;
   padding: 8px 40px;
@@ -315,11 +316,11 @@ section.main .content-box > li {
   border-radius: 17px;
 }
 
-/* line 214, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 .pictures {
   width: 100%;
 }
-/* line 216, ../sass/style.scss */
+/* line 219, ../sass/style.scss */
 .pictures li {
   border: 1px solid blue;
   float: left;
@@ -330,84 +331,113 @@ section.main .content-box > li {
   box-sizing: border-box;
 }
 
-/* line 224, ../sass/style.scss */
+/* line 228, ../sass/style.scss */
 .activities {
   padding: 25px 20px;
 }
-/* line 226, ../sass/style.scss */
+/* line 230, ../sass/style.scss */
 .activities strong, .activities a {
   color: white;
 }
-/* line 229, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 .activities i, .activities span {
   color: #4276a4;
 }
-/* line 232, ../sass/style.scss */
+/* line 236, ../sass/style.scss */
 .activities ul {
   margin-top: 10px;
 }
-/* line 234, ../sass/style.scss */
+/* line 238, ../sass/style.scss */
 .activities ul li {
   line-height: 25px;
 }
-/* line 238, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 .activities span {
   margin-left: 5px;
 }
 
 /* center */
-/* line 247, ../sass/style.scss */
+/* line 251, ../sass/style.scss */
+.twitter-numbers {
+  background-color: #FFFBF5;
+  border: 1px solid #ccc;
+}
+/* line 255, ../sass/style.scss */
+.twitter-numbers li {
+  float: left;
+  width: 25%;
+  padding: 20px 0;
+}
+/* line 259, ../sass/style.scss */
+.twitter-numbers li.active {
+  border-bottom: 5px solid #80A8CC;
+}
+/* line 263, ../sass/style.scss */
+.twitter-numbers span {
+  color: #8D8B86;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+}
+/* line 268, ../sass/style.scss */
+.twitter-numbers strong {
+  display: block;
+  margin-top: 0.3rem;
+  font-weight: bold;
+  font-size: 1.3rem;
+  line-height: 1.3rem;
+}
+
+/* line 276, ../sass/style.scss */
 .twitter {
   position: relative;
   padding: 2rem 2rem 2rem 6rem;
-  font-weight: lighter;
 }
-/* line 251, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 .twitter .circle {
   background-color: #80A8CC;
 }
-/* line 254, ../sass/style.scss */
+/* line 282, ../sass/style.scss */
 .twitter .user {
   position: absolute;
   left: 2rem;
 }
-/* line 258, ../sass/style.scss */
+/* line 286, ../sass/style.scss */
 .twitter .name {
   font-weight: bold;
 }
-/* line 261, ../sass/style.scss */
+/* line 289, ../sass/style.scss */
 .twitter .at {
   color: #CAC5B6;
 }
-/* line 264, ../sass/style.scss */
+/* line 292, ../sass/style.scss */
 .twitter .time {
   color: #CAC5B6;
 }
-/* line 267, ../sass/style.scss */
+/* line 295, ../sass/style.scss */
 .twitter p {
   margin: 0.5rem 0 1rem;
   line-height: 1.5rem;
 }
-/* line 271, ../sass/style.scss */
+/* line 299, ../sass/style.scss */
 .twitter li {
   float: left;
   margin-right: 1rem;
 }
-/* line 274, ../sass/style.scss */
+/* line 302, ../sass/style.scss */
 .twitter li.last {
   float: right;
   margin-right: 0;
 }
-/* line 278, ../sass/style.scss */
+/* line 306, ../sass/style.scss */
 .twitter li i {
   color: #CAC5B6;
   cursor: pointer;
 }
-/* line 281, ../sass/style.scss */
+/* line 309, ../sass/style.scss */
 .twitter li i:hover {
   color: inherit;
 }
-/* line 284, ../sass/style.scss */
+/* line 312, ../sass/style.scss */
 .twitter li i span {
   margin-left: 0.3rem;
 }
