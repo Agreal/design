@@ -186,6 +186,13 @@ header {
   strong {
     font-size: 1.3rem;
   }
+  .right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100%;
+  }
   p {
     font-size: 1rem;
     margin-top: 10px;
@@ -312,6 +319,43 @@ header {
       span {
         margin-left: 0.3rem;
       }
+    }
+  }
+
+}
+
+.right{
+  @include debug-bd(red);
+  .trends{
+    padding: 25px 20px;
+    strong{
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      color: $text-color-default;
+      font-weight: lighter;
+
+    }
+    ul{
+      margin-top: 15px;
+      a{
+        line-height: 1.5rem;
+        color: $bg-color-blue;
+        text-decoration: none;
+        &:hover{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .followed{
+    li{
+      margin-top: 20px;
+//      float: left;
+    }
+
+    .more{
+      padding-right: 0;
     }
   }
 }
