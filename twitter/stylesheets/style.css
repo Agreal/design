@@ -338,27 +338,40 @@ section.main .content {
   margin-left: 5px;
 }
 
-/* line 235, ../sass/style.scss */
+/* line 234, ../sass/style.scss */
+.right {
+  border: 1px solid red;
+}
+/* line 236, ../sass/style.scss */
 .right .trends {
   padding: 25px 20px;
 }
-/* line 237, ../sass/style.scss */
+/* line 238, ../sass/style.scss */
 .right .trends strong {
   font-size: 1.2rem;
   text-transform: uppercase;
   color: #8D8B86;
+  font-weight: lighter;
 }
-/* line 242, ../sass/style.scss */
+/* line 245, ../sass/style.scss */
 .right .trends ul {
   margin-top: 15px;
 }
-/* line 244, ../sass/style.scss */
+/* line 247, ../sass/style.scss */
 .right .trends ul a {
   line-height: 1.5rem;
   color: #80A8CC;
   text-decoration: none;
 }
-/* line 248, ../sass/style.scss */
+/* line 251, ../sass/style.scss */
 .right .trends ul a:hover {
   text-decoration: underline;
+}
+/* line 259, ../sass/style.scss */
+.right .followed li {
+  margin-top: 20px;
+}
+/* line 264, ../sass/style.scss */
+.right .followed .more {
+  padding-right: 0;
 }

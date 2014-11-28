@@ -232,12 +232,15 @@ section.main {
 }
 
 .right{
+  @include debug-bd(red);
   .trends{
     padding: 25px 20px;
     strong{
       font-size: 1.2rem;
       text-transform: uppercase;
       color: $text-color-default;
+      font-weight: lighter;
+
     }
     ul{
       margin-top: 15px;
@@ -249,6 +252,17 @@ section.main {
           text-decoration: underline;
         }
       }
+    }
+  }
+
+  .followed{
+    li{
+      margin-top: 20px;
+//      float: left;
+    }
+
+    .more{
+      padding-right: 0;
     }
   }
 }
