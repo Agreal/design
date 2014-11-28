@@ -450,40 +450,36 @@ header .user .circle {
   margin-left: 0.3rem;
 }
 
-/* line 327, ../sass/style.scss */
-.right {
-  border: 1px solid red;
-}
-/* line 329, ../sass/style.scss */
+/* line 328, ../sass/style.scss */
 .right .trends {
   padding: 25px 20px;
 }
-/* line 331, ../sass/style.scss */
+/* line 330, ../sass/style.scss */
 .right .trends strong {
   font-size: 1.2rem;
   text-transform: uppercase;
   color: #8D8B86;
   font-weight: lighter;
 }
-/* line 338, ../sass/style.scss */
+/* line 337, ../sass/style.scss */
 .right .trends ul {
   margin-top: 15px;
 }
-/* line 340, ../sass/style.scss */
+/* line 339, ../sass/style.scss */
 .right .trends ul a {
   line-height: 1.5rem;
   color: #80A8CC;
   text-decoration: none;
 }
-/* line 344, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .right .trends ul a:hover {
   text-decoration: underline;
 }
-/* line 352, ../sass/style.scss */
+/* line 351, ../sass/style.scss */
 .right .followed li {
   margin-top: 20px;
 }
-/* line 357, ../sass/style.scss */
+/* line 356, ../sass/style.scss */
 .right .followed .more {
   padding-right: 0;
 }

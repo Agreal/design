@@ -325,7 +325,6 @@ header {
 }
 
 .right{
-  @include debug-bd(red);
   .trends{
     padding: 25px 20px;
     strong{
