@@ -450,36 +450,99 @@ header .user .circle {
   margin-left: 0.3rem;
 }
 
+/*right*/
 /* line 328, ../sass/style.scss */
 .right .trends {
-  padding: 25px 20px;
+  padding: 5px 20px;
 }
-/* line 330, ../sass/style.scss */
+/* line 331, ../sass/style.scss */
+.right .trends .links {
+  margin: 1.2rem 0.5rem 0.8rem 0.5rem;
+}
+/* line 335, ../sass/style.scss */
+.right .trends .header {
+  padding-bottom: 0.8rem;
+}
+/* line 340, ../sass/style.scss */
 .right .trends strong {
   font-size: 1.2rem;
   text-transform: uppercase;
   color: #8D8B86;
   font-weight: lighter;
 }
-/* line 337, ../sass/style.scss */
-.right .trends ul {
-  margin-top: 15px;
-}
-/* line 339, ../sass/style.scss */
-.right .trends ul a {
-  line-height: 1.5rem;
+/* line 347, ../sass/style.scss */
+.right .trends a {
+  line-height: 1.8rem;
   color: #80A8CC;
+  font-size: 1.1rem;
+  font-weight: lighter;
   text-decoration: none;
 }
-/* line 343, ../sass/style.scss */
-.right .trends ul a:hover {
+/* line 353, ../sass/style.scss */
+.right .trends a:hover {
   text-decoration: underline;
 }
-/* line 351, ../sass/style.scss */
-.right .followed li {
-  margin-top: 20px;
+/* line 359, ../sass/style.scss */
+.right .followed {
+  margin: 1.2rem 0.5rem 0.8rem 0.5rem;
+  position: relative;
 }
-/* line 356, ../sass/style.scss */
-.right .followed .more {
+/* line 363, ../sass/style.scss */
+.right .followed .header {
+  position: relative;
   padding-right: 0;
+}
+/* line 367, ../sass/style.scss */
+.right .followed .header strong {
+  position: relative;
+}
+/* line 371, ../sass/style.scss */
+.right .followed .header .more {
+  position: absolute;
+  right: 0;
+  font-size: 1.3rem;
+}
+/* line 375, ../sass/style.scss */
+.right .followed .header .more:hover {
+  color: inherit;
+}
+/* line 381, ../sass/style.scss */
+.right .followed li {
+  position: relative;
+  margin-top: 0.8rem;
+}
+/* line 385, ../sass/style.scss */
+.right .followed li .circle {
+  background-color: #80A8CC;
+}
+/* line 389, ../sass/style.scss */
+.right .followed li .user {
+  position: absolute;
+}
+/* line 393, ../sass/style.scss */
+.right .followed li .name {
+  margin-left: 4rem;
+  font-size: 1.1rem;
+  width: 12rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #8D8B86;
+}
+/* line 403, ../sass/style.scss */
+.right .followed li .role {
+  margin-left: 4rem;
+  font-size: 1.1rem;
+  width: 12rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: #CAC5B6;
+}
+/* line 413, ../sass/style.scss */
+.right .followed li .followedIcon {
+  position: absolute;
+  right: 0;
+  padding: 0.2px 3px 0.2px 3px;
+  border: 1px solid #CAC5B6;
 }

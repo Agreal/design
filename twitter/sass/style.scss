@@ -321,40 +321,101 @@ header {
       }
     }
   }
-
 }
 
+/*right*/
 .right{
   .trends{
-    padding: 25px 20px;
+    padding: 5px 20px;
+
+    .links{
+      margin: 1.2rem 0.5rem 0.8rem 0.5rem;
+    }
+
+    .header{
+      padding-bottom: 0.8rem;
+
+    }
+
     strong{
       font-size: 1.2rem;
       text-transform: uppercase;
       color: $text-color-default;
       font-weight: lighter;
-
     }
-    ul{
-      margin-top: 15px;
-      a{
-        line-height: 1.5rem;
-        color: $bg-color-blue;
-        text-decoration: none;
-        &:hover{
-          text-decoration: underline;
-        }
+
+    a{
+      line-height: 1.8rem;
+      color: $bg-color-blue;
+      font-size: 1.1rem;
+      font-weight: lighter;
+      text-decoration: none;
+      &:hover{
+        text-decoration: underline;
       }
     }
   }
 
   .followed{
-    li{
-      margin-top: 20px;
-//      float: left;
+    margin: 1.2rem 0.5rem 0.8rem 0.5rem;
+    position: relative;
+
+    .header{
+      position: relative;
+      padding-right: 0;
+
+      strong{
+        position: relative;
+      }
+
+      .more{
+        position: absolute;
+        right: 0;
+        font-size: 1.3rem;
+        &:hover{
+          color: inherit;
+        }
+      }
     }
 
-    .more{
-      padding-right: 0;
+    li{
+      position: relative;
+      margin-top: 0.8rem;
+
+      .circle {
+        background-color: $bg-color-blue;
+      }
+
+      .user {
+        position: absolute;
+      }
+
+      .name{
+        margin-left: 4rem;
+        font-size: 1.1rem;
+        width: 12rem;
+        white-space: nowrap;
+        text-overflow:ellipsis;
+        overflow: hidden;
+        color: $text-color-default;
+      }
+
+      .role{
+        margin-left: 4rem;
+        font-size: 1.1rem;
+        width: 12rem;
+        white-space: nowrap;
+        text-overflow:ellipsis;
+        overflow: hidden;
+        color: $text-color-lighten;
+      }
+
+      .followedIcon{
+        position: absolute;
+        right: 0;
+        padding: 0.2px 3px 0.2px 3px;
+        border: 1px solid $text-color-lighten;
+      }
     }
   }
 }
