@@ -511,15 +511,18 @@ header .user .circle {
   position: relative;
   margin-top: 0.8rem;
 }
-/* line 385, ../sass/style.scss */
-.right .followed li .circle {
-  background-color: #80A8CC;
-}
 /* line 389, ../sass/style.scss */
+.right .followed li img {
+  height: 35px;
+  width: 35px;
+  border-radius: 35px 35px;
+  position: absolute;
+}
+/* line 396, ../sass/style.scss */
 .right .followed li .user {
   position: absolute;
 }
-/* line 393, ../sass/style.scss */
+/* line 400, ../sass/style.scss */
 .right .followed li .name {
   margin-left: 4rem;
   font-size: 1.1rem;
@@ -529,7 +532,7 @@ header .user .circle {
   overflow: hidden;
   color: #8D8B86;
 }
-/* line 403, ../sass/style.scss */
+/* line 410, ../sass/style.scss */
 .right .followed li .role {
   margin-left: 4rem;
   font-size: 1.1rem;
@@ -539,7 +542,7 @@ header .user .circle {
   overflow: hidden;
   color: #CAC5B6;
 }
-/* line 413, ../sass/style.scss */
+/* line 420, ../sass/style.scss */
 .right .followed li .followedIcon {
   position: absolute;
   right: 0;

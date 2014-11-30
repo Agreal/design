@@ -382,8 +382,15 @@ header {
       position: relative;
       margin-top: 0.8rem;
 
-      .circle {
-        background-color: $bg-color-blue;
+//      .circle {
+//        background-color: $bg-color-blue;
+//      }
+
+      img{
+        height: 35px;
+        width: 35px;
+        border-radius: 35px 35px;
+        position: absolute;
       }
 
       .user {
