@@ -182,11 +182,10 @@ header {
 .user-info {
   color: #ffffff;
   padding: 30px 20px;
-  .circle-large {
-    margin-bottom: 20px;
-  }
   strong {
     font-size: 1.3rem;
+    margin-top: 20px;
+    display: block;
   }
   .right {
     position: absolute;
@@ -218,8 +217,14 @@ header {
   .follow {
     width: 50px;
     padding: 8px 40px;
+    color: #ffffff;
+    display: block;
+    cursor: pointer;
     background-color: darken($bg-color-blue, 20%);
     @include border-radius(17px);
+    &:hover {
+      background-color: darken($bg-color-blue, 10%);
+    }
   }
 }
 

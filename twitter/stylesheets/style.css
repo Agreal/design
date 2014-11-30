@@ -274,14 +274,12 @@ header .user .circle {
   padding: 30px 20px;
 }
 /* line 185, ../sass/style.scss */
-.user-info .circle-large {
-  margin-bottom: 20px;
-}
-/* line 188, ../sass/style.scss */
 .user-info strong {
   font-size: 1.3rem;
+  margin-top: 20px;
+  display: block;
 }
-/* line 191, ../sass/style.scss */
+/* line 190, ../sass/style.scss */
 .user-info .right {
   position: absolute;
   top: 0;
@@ -289,46 +287,53 @@ header .user .circle {
   width: 250px;
   height: 100%;
 }
-/* line 198, ../sass/style.scss */
+/* line 197, ../sass/style.scss */
 .user-info p {
   font-size: 1rem;
   margin-top: 10px;
   margin-bottom: 20px;
 }
-/* line 203, ../sass/style.scss */
+/* line 202, ../sass/style.scss */
 .user-info a {
   color: #ffffff;
   text-decoration: none;
   display: block;
 }
-/* line 207, ../sass/style.scss */
+/* line 206, ../sass/style.scss */
 .user-info a:hover {
   text-decoration: underline;
 }
-/* line 211, ../sass/style.scss */
+/* line 210, ../sass/style.scss */
 .user-info .site {
   margin-bottom: 15px;
 }
-/* line 213, ../sass/style.scss */
+/* line 212, ../sass/style.scss */
 .user-info .site:before {
   content: ",";
   margin-right: 10px;
 }
-/* line 218, ../sass/style.scss */
+/* line 217, ../sass/style.scss */
 .user-info .follow {
   width: 50px;
   padding: 8px 40px;
+  color: #ffffff;
+  display: block;
+  cursor: pointer;
   background-color: #4276a4;
   -moz-border-radius: 17px;
   -webkit-border-radius: 17px;
   border-radius: 17px;
 }
+/* line 225, ../sass/style.scss */
+.user-info .follow:hover {
+  background-color: #5c8fbd;
+}
 
-/* line 226, ../sass/style.scss */
+/* line 231, ../sass/style.scss */
 .pictures {
   width: 100%;
 }
-/* line 228, ../sass/style.scss */
+/* line 233, ../sass/style.scss */
 .pictures li {
   float: left;
   width: 90px;
@@ -337,60 +342,60 @@ header .user .circle {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
-/* line 234, ../sass/style.scss */
+/* line 239, ../sass/style.scss */
 .pictures img {
   width: 100%;
   height: 100%;
 }
 
-/* line 240, ../sass/style.scss */
+/* line 245, ../sass/style.scss */
 .activities {
   padding: 25px 20px;
 }
-/* line 242, ../sass/style.scss */
+/* line 247, ../sass/style.scss */
 .activities strong, .activities a {
   color: white;
 }
-/* line 245, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 .activities i, .activities span {
   color: #4276a4;
 }
-/* line 248, ../sass/style.scss */
+/* line 253, ../sass/style.scss */
 .activities ul {
   margin-top: 10px;
 }
-/* line 250, ../sass/style.scss */
+/* line 255, ../sass/style.scss */
 .activities ul li {
   line-height: 25px;
 }
-/* line 254, ../sass/style.scss */
+/* line 259, ../sass/style.scss */
 .activities span {
   margin-left: 5px;
 }
 
 /* center */
-/* line 263, ../sass/style.scss */
+/* line 268, ../sass/style.scss */
 .twitter-numbers {
   background-color: #FFFBF5;
   border: 1px solid #ccc;
 }
-/* line 266, ../sass/style.scss */
+/* line 271, ../sass/style.scss */
 .twitter-numbers li {
   float: left;
   width: 25%;
   padding: 20px 0;
 }
-/* line 270, ../sass/style.scss */
+/* line 275, ../sass/style.scss */
 .twitter-numbers li.active {
   border-bottom: 5px solid #80A8CC;
 }
-/* line 274, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 .twitter-numbers span {
   color: #8D8B86;
   font-size: 1.2rem;
   line-height: 1.2rem;
 }
-/* line 279, ../sass/style.scss */
+/* line 284, ../sass/style.scss */
 .twitter-numbers strong {
   display: block;
   margin-top: 0.3rem;
@@ -399,92 +404,92 @@ header .user .circle {
   line-height: 1.3rem;
 }
 
-/* line 287, ../sass/style.scss */
+/* line 292, ../sass/style.scss */
 .twitter {
   position: relative;
   padding: 2rem 2rem 2rem 6rem;
 }
-/* line 290, ../sass/style.scss */
+/* line 295, ../sass/style.scss */
 .twitter .user {
   position: absolute;
   left: 2rem;
 }
-/* line 294, ../sass/style.scss */
+/* line 299, ../sass/style.scss */
 .twitter .new {
   color: #ADD278;
   margin-right: 0.2rem;
 }
-/* line 298, ../sass/style.scss */
+/* line 303, ../sass/style.scss */
 .twitter .name {
   font-weight: bold;
 }
-/* line 301, ../sass/style.scss */
+/* line 306, ../sass/style.scss */
 .twitter a {
   text-decoration: none;
   color: #CAC5B6;
 }
-/* line 304, ../sass/style.scss */
+/* line 309, ../sass/style.scss */
 .twitter a:hover {
   color: #8D8B86;
 }
-/* line 308, ../sass/style.scss */
+/* line 313, ../sass/style.scss */
 .twitter .time {
   color: #CAC5B6;
 }
-/* line 311, ../sass/style.scss */
+/* line 316, ../sass/style.scss */
 .twitter p {
   margin: 0.5rem 0 1rem;
   line-height: 1.5rem;
 }
-/* line 314, ../sass/style.scss */
+/* line 319, ../sass/style.scss */
 .twitter p img {
   width: 100%;
 }
-/* line 318, ../sass/style.scss */
+/* line 323, ../sass/style.scss */
 .twitter li {
   float: left;
   margin-right: 1rem;
 }
-/* line 321, ../sass/style.scss */
+/* line 326, ../sass/style.scss */
 .twitter li.last {
   float: right;
   margin-right: 0;
 }
-/* line 325, ../sass/style.scss */
+/* line 330, ../sass/style.scss */
 .twitter li i {
   color: #CAC5B6;
   cursor: pointer;
 }
-/* line 328, ../sass/style.scss */
+/* line 333, ../sass/style.scss */
 .twitter li i:hover {
   color: inherit;
 }
-/* line 331, ../sass/style.scss */
+/* line 336, ../sass/style.scss */
 .twitter li i span {
   margin-left: 0.3rem;
 }
 
 /*right*/
-/* line 340, ../sass/style.scss */
+/* line 345, ../sass/style.scss */
 .right .trends {
   padding: 5px 20px;
 }
-/* line 343, ../sass/style.scss */
+/* line 348, ../sass/style.scss */
 .right .trends .links {
   margin: 1.2rem 0.5rem 0.8rem 0.5rem;
 }
-/* line 347, ../sass/style.scss */
+/* line 352, ../sass/style.scss */
 .right .trends .header {
   padding-bottom: 0.8rem;
 }
-/* line 352, ../sass/style.scss */
+/* line 357, ../sass/style.scss */
 .right .trends strong {
   font-size: 1.2rem;
   text-transform: uppercase;
   color: #8D8B86;
   font-weight: lighter;
 }
-/* line 359, ../sass/style.scss */
+/* line 364, ../sass/style.scss */
 .right .trends a {
   line-height: 1.8rem;
   color: #80A8CC;
@@ -492,51 +497,51 @@ header .user .circle {
   font-weight: lighter;
   text-decoration: none;
 }
-/* line 365, ../sass/style.scss */
+/* line 370, ../sass/style.scss */
 .right .trends a:hover {
   text-decoration: underline;
 }
-/* line 371, ../sass/style.scss */
+/* line 376, ../sass/style.scss */
 .right .followed {
   margin: 1.2rem 0.5rem 0.8rem 0.5rem;
   position: relative;
 }
-/* line 375, ../sass/style.scss */
+/* line 380, ../sass/style.scss */
 .right .followed .header {
   position: relative;
   padding-right: 0;
 }
-/* line 379, ../sass/style.scss */
+/* line 384, ../sass/style.scss */
 .right .followed .header strong {
   position: relative;
 }
-/* line 383, ../sass/style.scss */
+/* line 388, ../sass/style.scss */
 .right .followed .header .more {
   position: absolute;
   right: 0;
   font-size: 1.3rem;
 }
-/* line 387, ../sass/style.scss */
+/* line 392, ../sass/style.scss */
 .right .followed .header .more:hover {
   color: inherit;
 }
-/* line 393, ../sass/style.scss */
+/* line 398, ../sass/style.scss */
 .right .followed li {
   position: relative;
   margin-top: 0.8rem;
 }
-/* line 401, ../sass/style.scss */
+/* line 406, ../sass/style.scss */
 .right .followed li img {
   height: 35px;
   width: 35px;
   border-radius: 35px 35px;
   position: absolute;
 }
-/* line 408, ../sass/style.scss */
+/* line 413, ../sass/style.scss */
 .right .followed li .user {
   position: absolute;
 }
-/* line 412, ../sass/style.scss */
+/* line 417, ../sass/style.scss */
 .right .followed li .name {
   margin-left: 4rem;
   font-size: 1.1rem;
@@ -546,7 +551,7 @@ header .user .circle {
   overflow: hidden;
   color: #8D8B86;
 }
-/* line 422, ../sass/style.scss */
+/* line 427, ../sass/style.scss */
 .right .followed li .role {
   margin-left: 4rem;
   font-size: 1.1rem;
@@ -556,7 +561,7 @@ header .user .circle {
   overflow: hidden;
   color: #CAC5B6;
 }
-/* line 432, ../sass/style.scss */
+/* line 437, ../sass/style.scss */
 .right .followed li .followedIcon {
   position: absolute;
   top: 0;
