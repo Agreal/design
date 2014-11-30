@@ -545,6 +545,7 @@ header .user .circle {
 /* line 420, ../sass/style.scss */
 .right .followed li .followedIcon {
   position: absolute;
+  top: 0;
   right: 0;
   padding: 0.2px 3px 0.2px 3px;
   border: 1px solid #CAC5B6;
