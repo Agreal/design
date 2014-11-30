@@ -1,4 +1,4 @@
-/* line 5, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 5, ../../../../../../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -20,45 +20,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
   display: block;
 }
@@ -241,19 +241,19 @@ header .search input {
   -webkit-border-radius: 18px;
   border-radius: 18px;
 }
-/* line 61, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 61, ../../../../../../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 header .search input:-moz-placeholder {
   color: #ccc;
 }
-/* line 64, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 64, ../../../../../../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 header .search input::-moz-placeholder {
   color: #ccc;
 }
-/* line 67, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 67, ../../../../../../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 header .search input:-ms-input-placeholder {
   color: #ccc;
 }
-/* line 56, ../../../../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
+/* line 56, ../../../../../../../../.rvm/gems/ruby-2.1.4/gems/compass-core-1.0.1/stylesheets/compass/css3/_user-interface.scss */
 header .search input::-webkit-input-placeholder {
   color: #ccc;
 }
@@ -277,17 +277,11 @@ header .user .circle {
 .user-info .circle-large {
   margin-bottom: 20px;
 }
-/* line 192, ../sass/style.scss */
-.user-info .circle-large img {
-  height: 80px;
-  width: 80px;
-  border-radius: 80px 80px;
-}
-/* line 198, ../sass/style.scss */
+/* line 188, ../sass/style.scss */
 .user-info strong {
   font-size: 1.3rem;
 }
-/* line 201, ../sass/style.scss */
+/* line 191, ../sass/style.scss */
 .user-info .right {
   position: absolute;
   top: 0;
@@ -295,32 +289,32 @@ header .user .circle {
   width: 250px;
   height: 100%;
 }
-/* line 208, ../sass/style.scss */
+/* line 198, ../sass/style.scss */
 .user-info p {
   font-size: 1rem;
   margin-top: 10px;
   margin-bottom: 20px;
 }
-/* line 213, ../sass/style.scss */
+/* line 203, ../sass/style.scss */
 .user-info a {
   color: #ffffff;
   text-decoration: none;
   display: block;
 }
-/* line 217, ../sass/style.scss */
+/* line 207, ../sass/style.scss */
 .user-info a:hover {
   text-decoration: underline;
 }
-/* line 221, ../sass/style.scss */
+/* line 211, ../sass/style.scss */
 .user-info .site {
   margin-bottom: 15px;
 }
-/* line 223, ../sass/style.scss */
+/* line 213, ../sass/style.scss */
 .user-info .site:before {
   content: ",";
   margin-right: 10px;
 }
-/* line 228, ../sass/style.scss */
+/* line 218, ../sass/style.scss */
 .user-info .follow {
   width: 50px;
   padding: 8px 40px;
@@ -330,13 +324,12 @@ header .user .circle {
   border-radius: 17px;
 }
 
-/* line 236, ../sass/style.scss */
+/* line 226, ../sass/style.scss */
 .pictures {
   width: 100%;
 }
-/* line 238, ../sass/style.scss */
+/* line 228, ../sass/style.scss */
 .pictures li {
-  border: 1px solid blue;
   float: left;
   width: 90px;
   height: 90px;
@@ -344,55 +337,60 @@ header .user .circle {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+/* line 234, ../sass/style.scss */
+.pictures img {
+  width: 100%;
+  height: 100%;
+}
 
-/* line 247, ../sass/style.scss */
+/* line 240, ../sass/style.scss */
 .activities {
   padding: 25px 20px;
 }
-/* line 249, ../sass/style.scss */
+/* line 242, ../sass/style.scss */
 .activities strong, .activities a {
   color: white;
 }
-/* line 252, ../sass/style.scss */
+/* line 245, ../sass/style.scss */
 .activities i, .activities span {
   color: #4276a4;
 }
-/* line 255, ../sass/style.scss */
+/* line 248, ../sass/style.scss */
 .activities ul {
   margin-top: 10px;
 }
-/* line 257, ../sass/style.scss */
+/* line 250, ../sass/style.scss */
 .activities ul li {
   line-height: 25px;
 }
-/* line 261, ../sass/style.scss */
+/* line 254, ../sass/style.scss */
 .activities span {
   margin-left: 5px;
 }
 
 /* center */
-/* line 270, ../sass/style.scss */
+/* line 263, ../sass/style.scss */
 .twitter-numbers {
   background-color: #FFFBF5;
   border: 1px solid #ccc;
 }
-/* line 274, ../sass/style.scss */
+/* line 266, ../sass/style.scss */
 .twitter-numbers li {
   float: left;
   width: 25%;
   padding: 20px 0;
 }
-/* line 278, ../sass/style.scss */
+/* line 270, ../sass/style.scss */
 .twitter-numbers li.active {
   border-bottom: 5px solid #80A8CC;
 }
-/* line 282, ../sass/style.scss */
+/* line 274, ../sass/style.scss */
 .twitter-numbers span {
   color: #8D8B86;
   font-size: 1.2rem;
   line-height: 1.2rem;
 }
-/* line 287, ../sass/style.scss */
+/* line 279, ../sass/style.scss */
 .twitter-numbers strong {
   display: block;
   margin-top: 0.3rem;
@@ -401,87 +399,92 @@ header .user .circle {
   line-height: 1.3rem;
 }
 
-/* line 295, ../sass/style.scss */
+/* line 287, ../sass/style.scss */
 .twitter {
   position: relative;
   padding: 2rem 2rem 2rem 6rem;
 }
-/* line 298, ../sass/style.scss */
-.twitter .circle {
-  background-color: #80A8CC;
-}
-/* line 301, ../sass/style.scss */
+/* line 290, ../sass/style.scss */
 .twitter .user {
   position: absolute;
   left: 2rem;
 }
-/* line 305, ../sass/style.scss */
+/* line 294, ../sass/style.scss */
+.twitter .new {
+  color: #ADD278;
+  margin-right: 0.2rem;
+}
+/* line 298, ../sass/style.scss */
 .twitter .name {
   font-weight: bold;
 }
-/* line 311, ../sass/style.scss */
+/* line 301, ../sass/style.scss */
 .twitter a {
   text-decoration: none;
   color: #CAC5B6;
 }
-/* line 314, ../sass/style.scss */
+/* line 304, ../sass/style.scss */
 .twitter a:hover {
   color: #8D8B86;
 }
-/* line 318, ../sass/style.scss */
+/* line 308, ../sass/style.scss */
 .twitter .time {
   color: #CAC5B6;
 }
-/* line 321, ../sass/style.scss */
+/* line 311, ../sass/style.scss */
 .twitter p {
   margin: 0.5rem 0 1rem;
   line-height: 1.5rem;
 }
-/* line 325, ../sass/style.scss */
+/* line 314, ../sass/style.scss */
+.twitter p img {
+  width: 100%;
+}
+/* line 318, ../sass/style.scss */
 .twitter li {
   float: left;
   margin-right: 1rem;
 }
-/* line 328, ../sass/style.scss */
+/* line 321, ../sass/style.scss */
 .twitter li.last {
   float: right;
   margin-right: 0;
 }
-/* line 332, ../sass/style.scss */
+/* line 325, ../sass/style.scss */
 .twitter li i {
   color: #CAC5B6;
   cursor: pointer;
 }
-/* line 335, ../sass/style.scss */
+/* line 328, ../sass/style.scss */
 .twitter li i:hover {
   color: inherit;
 }
-/* line 338, ../sass/style.scss */
+/* line 331, ../sass/style.scss */
 .twitter li i span {
   margin-left: 0.3rem;
 }
 
 /*right*/
-/* line 347, ../sass/style.scss */
+/* line 340, ../sass/style.scss */
 .right .trends {
   padding: 5px 20px;
 }
-/* line 350, ../sass/style.scss */
+/* line 343, ../sass/style.scss */
 .right .trends .links {
   margin: 1.2rem 0.5rem 0.8rem 0.5rem;
 }
-/* line 354, ../sass/style.scss */
+/* line 347, ../sass/style.scss */
 .right .trends .header {
   padding-bottom: 0.8rem;
 }
-/* line 359, ../sass/style.scss */
+/* line 352, ../sass/style.scss */
 .right .trends strong {
   font-size: 1.2rem;
   text-transform: uppercase;
   color: #8D8B86;
   font-weight: lighter;
 }
-/* line 366, ../sass/style.scss */
+/* line 359, ../sass/style.scss */
 .right .trends a {
   line-height: 1.8rem;
   color: #80A8CC;
@@ -489,51 +492,51 @@ header .user .circle {
   font-weight: lighter;
   text-decoration: none;
 }
-/* line 372, ../sass/style.scss */
+/* line 365, ../sass/style.scss */
 .right .trends a:hover {
   text-decoration: underline;
 }
-/* line 378, ../sass/style.scss */
+/* line 371, ../sass/style.scss */
 .right .followed {
   margin: 1.2rem 0.5rem 0.8rem 0.5rem;
   position: relative;
 }
-/* line 382, ../sass/style.scss */
+/* line 375, ../sass/style.scss */
 .right .followed .header {
   position: relative;
   padding-right: 0;
 }
-/* line 386, ../sass/style.scss */
+/* line 379, ../sass/style.scss */
 .right .followed .header strong {
   position: relative;
 }
-/* line 390, ../sass/style.scss */
+/* line 383, ../sass/style.scss */
 .right .followed .header .more {
   position: absolute;
   right: 0;
   font-size: 1.3rem;
 }
-/* line 394, ../sass/style.scss */
+/* line 387, ../sass/style.scss */
 .right .followed .header .more:hover {
   color: inherit;
 }
-/* line 400, ../sass/style.scss */
+/* line 393, ../sass/style.scss */
 .right .followed li {
   position: relative;
   margin-top: 0.8rem;
 }
-/* line 408, ../sass/style.scss */
+/* line 401, ../sass/style.scss */
 .right .followed li img {
   height: 35px;
   width: 35px;
   border-radius: 35px 35px;
   position: absolute;
 }
-/* line 415, ../sass/style.scss */
+/* line 408, ../sass/style.scss */
 .right .followed li .user {
   position: absolute;
 }
-/* line 419, ../sass/style.scss */
+/* line 412, ../sass/style.scss */
 .right .followed li .name {
   margin-left: 4rem;
   font-size: 1.1rem;
@@ -543,7 +546,7 @@ header .user .circle {
   overflow: hidden;
   color: #8D8B86;
 }
-/* line 429, ../sass/style.scss */
+/* line 422, ../sass/style.scss */
 .right .followed li .role {
   margin-left: 4rem;
   font-size: 1.1rem;
@@ -553,7 +556,7 @@ header .user .circle {
   overflow: hidden;
   color: #CAC5B6;
 }
-/* line 439, ../sass/style.scss */
+/* line 432, ../sass/style.scss */
 .right .followed li .followedIcon {
   position: absolute;
   top: 0;
