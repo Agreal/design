@@ -126,6 +126,13 @@ header {
       line-height: 35px;
     }
   }
+
+  img{
+    height: 35px;
+    width: 35px;
+    border-radius: 35px 35px;
+  }
+
   .menu {
     border-right: 1px solid $bg-color-white-darken;
     padding: 15px;
@@ -177,10 +184,15 @@ header {
   padding: 30px 20px;
   .circle-large {
     margin-bottom: 20px;
-    background-color: $bg-color-white;
-    i {
-      color: $bg-color-blue;
-      line-height: 80px;
+//    background-color: $bg-color-white;
+//    i {
+//      color: $bg-color-blue;
+//      line-height: 80px;
+//    }
+    img{
+      height: 80px;
+      width: 80px;
+      border-radius: 80px 80px;
     }
   }
   strong {
@@ -293,8 +305,15 @@ header {
   .name {
     font-weight: bold;
   }
-  .at {
+//  .at {
+//    color: $text-color-lighten;
+//  }
+  a{
+    text-decoration: none;
     color: $text-color-lighten;
+    &:hover{
+      color: $text-color-default;
+    }
   }
   .time {
     color: $text-color-lighten;
