@@ -102,7 +102,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 55, ../sass/basic.scss */
 html, body {
-  min-width: 959px;
   font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
   color: #000;
   background-color: #333333;
@@ -111,12 +110,39 @@ html, body {
 
 /* line 5, ../sass/style.scss */
 .container {
-  padding: 3rem;
+  width: 959px;
 }
 
 /* line 9, ../sass/style.scss */
 header {
-  width: 959px;
   height: 358px;
   background-image: url("../img/header-background.jpg");
+}
+
+/* line 15, ../sass/style.scss */
+.live {
+  margin-top: 100px;
+}
+/* line 17, ../sass/style.scss */
+.live li {
+  float: left;
+}
+/* line 19, ../sass/style.scss */
+.live li:nth-child(1), .live li:nth-child(2), .live li:nth-child(3) {
+  margin-bottom: 20px;
+}
+/* line 22, ../sass/style.scss */
+.live li:nth-child(2), .live li:nth-child(5) {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+/* line 27, ../sass/style.scss */
+.live img {
+  height: 100px;
+  width: 306.33333px;
+  opacity: 0.4;
+}
+/* line 32, ../sass/style.scss */
+.live img:hover {
+  opacity: 1;
 }
