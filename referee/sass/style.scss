@@ -1,0 +1,13 @@
+//@import "compass/css3";
+//@import "compass/utilities/";
+@import "basic";
+
+.container {
+  padding: 3rem;
+}
+
+header {
+  width: $content-min-width;
+  height: 358px;
+  background-image: url("../img/header-background.jpg");
+}
