@@ -6,9 +6,7 @@
 $bg-color: lighten(#000, 20%);
 $bg-color-red: #B4000B;
 $content-min-width: 959px;
-//$bg-color-white-darken: #F2EEE8;
-//$bg-content-color: #F2EEE8;
-//$bg-color-blue: #80A8CC;
+$bd-color: #AAAAAA;
 
 // utils
 @mixin debug-bd($color) {
@@ -53,9 +51,17 @@ $content-min-width: 959px;
 }
 
 html, body {
-//  min-width: $content-min-width;
   font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-  color: #000;
+  color: #ffffff;
   background-color: $bg-color;
   font-weight: lighter;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  &:hover {
+    color: $bg-color-red;
+    border-bottom: 1px dotted $bg-color-red;
+  }
 }

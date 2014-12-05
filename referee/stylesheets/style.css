@@ -63,86 +63,169 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
-/* line 24, ../sass/basic.scss */
+/* line 22, ../sass/common/basic.scss */
 .fn-center {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
 }
 
-/* line 30, ../sass/basic.scss */
+/* line 28, ../sass/common/basic.scss */
 .fn-left {
   float: left;
 }
 
-/* line 34, ../sass/basic.scss */
+/* line 32, ../sass/common/basic.scss */
 .fn-right {
   float: right;
 }
 
-/* line 38, ../sass/basic.scss */
+/* line 36, ../sass/common/basic.scss */
 .clearfix {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 39, ../sass/basic.scss */
+/* line 37, ../sass/common/basic.scss */
 .clearfix:before, .clearfix:after {
   content: " ";
   display: table;
 }
-/* line 44, ../sass/basic.scss */
+/* line 42, ../sass/common/basic.scss */
 .clearfix:after {
   clear: both;
 }
 
-/* line 51, ../sass/basic.scss */
+/* line 49, ../sass/common/basic.scss */
 .fa {
   font-size: 1rem;
 }
 
-/* line 55, ../sass/basic.scss */
+/* line 53, ../sass/common/basic.scss */
 html, body {
   font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-  color: #000;
+  color: #ffffff;
   background-color: #333333;
   font-weight: lighter;
 }
 
+/* line 60, ../sass/common/basic.scss */
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+/* line 63, ../sass/common/basic.scss */
+a:hover {
+  color: #B4000B;
+  border-bottom: 1px dotted #B4000B;
+}
+
 /* line 5, ../sass/style.scss */
 .container {
+  padding-left: 20px;
+  padding-right: 20px;
   width: 959px;
 }
 
-/* line 9, ../sass/style.scss */
+/* line 12, ../sass/style.scss */
 header {
   height: 358px;
   background-image: url("../img/header-background.jpg");
 }
 
-/* line 15, ../sass/style.scss */
-.live {
-  margin-top: 100px;
-}
 /* line 17, ../sass/style.scss */
+h4 {
+  margin-bottom: 30px;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+/* line 22, ../sass/style.scss */
+h4:after {
+  content: " ";
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  width: 30px;
+  border-bottom: 2px solid #AAAAAA;
+}
+
+/* line 31, ../sass/style.scss */
+section {
+  border-top: 1px solid #AAAAAA;
+  padding-top: 40px;
+  padding-bottom: 50px;
+}
+
+/* line 38, ../sass/style.scss */
 .live li {
   float: left;
+  position: relative;
 }
-/* line 19, ../sass/style.scss */
+/* line 41, ../sass/style.scss */
 .live li:nth-child(1), .live li:nth-child(2), .live li:nth-child(3) {
   margin-bottom: 20px;
 }
-/* line 22, ../sass/style.scss */
+/* line 44, ../sass/style.scss */
 .live li:nth-child(2), .live li:nth-child(5) {
   margin-left: 20px;
   margin-right: 20px;
 }
-/* line 27, ../sass/style.scss */
-.live img {
-  height: 100px;
-  width: 306.33333px;
+/* line 49, ../sass/style.scss */
+.live li:hover img {
   opacity: 0.4;
 }
-/* line 32, ../sass/style.scss */
-.live img:hover {
-  opacity: 1;
+/* line 52, ../sass/style.scss */
+.live li:hover strong {
+  position: absolute;
+  display: inline;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+  font-size: 1.3rem;
+}
+/* line 62, ../sass/style.scss */
+.live img {
+  height: 230px;
+  width: 306.33333px;
+  display: block;
+}
+/* line 67, ../sass/style.scss */
+.live strong {
+  display: none;
+}
+
+/* line 75, ../sass/style.scss */
+.level li {
+  float: left;
+  position: relative;
+  width: 159.83333px;
+}
+/* line 80, ../sass/style.scss */
+.level p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+/* line 84, ../sass/style.scss */
+.level .user {
+  line-height: 5rem;
+}
+/* line 87, ../sass/style.scss */
+.level .icon-user {
+  font-size: 3rem;
+}
+/* line 90, ../sass/style.scss */
+.level .icon-user2 {
+  font-size: 4rem;
+}
+/* line 93, ../sass/style.scss */
+.level .icon-user3 {
+  font-size: 5rem;
+}
+
+/* line 99, ../sass/style.scss */
+footer {
+  border-top: 1px solid #AAAAAA;
+  padding-top: 1.7rem;
+  padding-bottom: 0.7rem;
+  height: 2rem;
 }
