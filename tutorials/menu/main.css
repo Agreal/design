@@ -1,0 +1,49 @@
+header {
+    background-color: #999999;
+    position: relative;
+}
+ul {
+    float: right;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+li {
+    float: left;
+    border: 1px solid #e2e2e2;
+}
+li a {
+    display: block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.menu1>li {
+    background-color: #01B4EA;
+}
+.menu2 {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+.menu2>li {
+    background-color: #ADD278;
+}
+.menu1>li:last-child:hover .menu2{
+    display: block;
+}
+
+main {
+    background-color: #67DDAB;
+    height: 100px;
+}
+
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
