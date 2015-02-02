@@ -7,9 +7,9 @@ ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    position: relative;
 }
 li {
-    float: left;
     border: 1px solid #e2e2e2;
 }
 li a {
@@ -20,17 +20,19 @@ li a {
     text-align: center;
 }
 .menu1>li {
+    float: left;
     background-color: #01B4EA;
 }
 .menu2 {
     display: none;
     position: absolute;
     top: 100%;
+    margin-left: -1px;
 }
 .menu2>li {
     background-color: #ADD278;
 }
-.menu1>li:last-child:hover .menu2{
+.menu1>li.sublist:hover .menu2{
     display: block;
 }
 
