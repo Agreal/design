@@ -49,3 +49,16 @@ main {
 .clearfix:after {
     clear: both;
 }
+
+/*#test1 {*/
+    /*width:100px;*/
+    /*height:30px;*/
+    /*background: red;*/
+    /*background: #FE5959\0;*/
+    /*filter: alpha(opacity=65);*/
+    /*overflow:visible;*/
+/*}*/
+/*#test1:after {*/
+    /*display: block;*/
+    /*content:"222";*/
+/*}*/
