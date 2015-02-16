@@ -22,7 +22,7 @@ gulp.task('connect', function () {
 
 
 gulp.task('serve', ['connect'], function () {
-    require('opn')('http://localhost:9000');
+    require('opn')('http://localhost:9000', 'Google Chrome');
 });
 
 
