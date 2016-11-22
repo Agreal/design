@@ -1,0 +1,10 @@
+.list1 {
+  overflow-y:auto;
+  -webkit-overflow-scrolling:touch;
+}
+.list1 .item1 {
+  line-height:50px;
+}
+.list1 .item1:nth-child(odd) {
+  background-color:cyan;
+}
