@@ -19,6 +19,17 @@ ul {
   }
 }
 
+// control-panel style
+.control-panel {
+  .project-box {
+    > h2 {
+      margin: 10px auto;
+      text-align: center;
+      font-size: inherit;
+    }
+  }
+}
+
 // tweets-panel style
 .tweets-panel {
   .tweet-list-container {
