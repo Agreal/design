@@ -1,0 +1,114 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+
+<div class="container">
+  <div class="row">
+    <div class="col col-md-2">
+      <div class="panel panel-default control-panel">
+        <div class="panel-heading">Control panel</div>
+        <div class="panel-body">
+          <div class="current-project">
+            ...
+          </div>
+          <div class="more-project">
+            ...
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col col-md-6">
+      <div class="panel panel-default tweets-panel">
+        <div class="panel-heading">Tweets (240 - 255 / 250)</div>
+        <div class="panel-body">
+          <div class="tweets-process">
+            <span class="tweets-process-label">Automatic Processing: </span>
+            <label class="tweets-process">
+              <input type="checkbox">Filtering
+            </label>
+            <label class="tweets-process">
+              <input type="checkbox">Polarity
+            </label>
+            <label class="tweets-process">
+              <input type="checkbox">Topic
+            </label>
+            <label class="tweets-process">
+              <input type="checkbox">Rep. Priority
+            </label>
+          </div>
+
+          <div class="tweet-list-container">
+            <ul class="tweet-list">
+              <li class="tweet">
+                <div class="tweet-body">
+                  <img class="tweet-image" src="" alt="">
+                  <div class="tweet-heading clearfix">
+                    <strong class="tweet-at">@balboaf</strong>
+                    <small class="tweet-date pull-right">26 Dec 12</small>
+                  </div>
+                  <div class="tweet-content">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium animi deleniti dicta doloremque eveniet itaque labore maiores, maxime, modi, molestiae quidem quos sit velit? Animi eum harum nobis recusandae soluta.
+                  </div>
+                </div>
+                <div class="tweet-status clearfix">
+                  <div class="tweet-relations pull-left">
+                    <span class="active">Related</span>
+                    <span>Unrelated</span>
+                  </div>
+                  <div class="tweet-positives pull-right">
+                    <span>Positive</span>
+                    <span class="active">Neutral</span>
+                    <span>Negative</span>
+                  </div>
+                </div>
+                <div class="text-right">
+                  Remove Validation
+                </div>
+                <div class="tweet-labels">
+                  <span>
+                    <i class="glyphicon glyphicon-lock"></i>
+                    <span class="label label-warning">Related</span>
+                  </span>
+                  <span>
+                    <i class="glyphicon glyphicon-lock"></i>
+                    <span class="label label-primary">Neutral</span>
+                  </span>
+                  <span>
+                    <i class="glyphicon glyphicon-lock"></i>
+                    <span class="label label-danger">Jaguar Models</span>
+                  </span>
+                  <span>
+                    <i class="glyphicon glyphicon-lock"></i>
+                    <span class="label label-info">low</span>
+                  </span>
+
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col col-md-4">
+      <div class="panel panel-default topics-panel">
+        <div class="panel-heading">
+          <div class="topics-title">Topics (16)</div>
+        </div>
+        <div class="panel-body">
+          <div class="topics-container">
+            <ul>
+              <li class="topic"></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
