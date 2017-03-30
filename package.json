@@ -1,9 +1,11 @@
 {
-  "name": "ui-design",
+  "name": "@agreal/design",
   "version": "1.0.0",
   "description": "Agreal's UI Design",
   "author": "Agreal",
   "license": "ISC",
+  "private": true,
+  "repository": "git@github.com:Agreal/design.git",
   "devDependencies": {
     "babel-preset-es2015": "^6.24.0",
     "browser-sync": "^2.18.8",
