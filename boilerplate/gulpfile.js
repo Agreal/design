@@ -1,10 +1,8 @@
-'use strict';
-
-import gulp from 'gulp';
-import sass from 'gulp-sass';
-import autoprefixer from 'gulp-autoprefixer';
-import sourcemaps from 'gulp-sourcemaps';
-import BrowserSync from 'browser-sync';
+const gulp = require('gulp');
+const sass = require('gulp-sass');
+const autoprefixer = require('gulp-autoprefixer');
+const sourcemaps = require('gulp-sourcemaps');
+const BrowserSync = require('browser-sync');
 
 const browserSync = BrowserSync.create();
 
