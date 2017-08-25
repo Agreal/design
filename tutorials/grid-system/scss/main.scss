@@ -1,0 +1,19 @@
+$line: 1px solid #ccc;
+$cell-bg: #ddd;
+
+@import "grid";
+
+// globel
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  background: #ccc;
+  margin-bottom: 10px;
+}
+[class^="col-"] {
+  height: 1.5em;
+  border: $line;
+  background-color: #ddd;
+}

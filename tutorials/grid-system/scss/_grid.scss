@@ -1,0 +1,46 @@
+// grids
+$grid-columns: 12;
+$grid-gutter-width: 10px;
+
+@mixin clearfix() {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+@mixin float-basis-column() {
+  position: relative;
+  min-height: 1px;
+  padding-left: ceil($grid-gutter-width/2);
+  padding-right: floor($grid-gutter-width/2);
+  float: left;
+}
+
+@mixin mack-column($i: 1) {
+  @for $i from (1) through $grid-columns {
+    .col-#{$i} {
+      width: percentage($i/$grid-columns);
+      @include float-basis-column();
+    }
+  }
+}
+
+@include mack-column();
+
+
+.container {
+  margin: auto;
+  width: 1200px;
+}
+.container-fluid {
+  width: 100%;
+}
+
+// grids
+.row {
+  position: relative;
+  margin-left:  ceil(($grid-gutter-width / -2));
+  margin-right: floor(($grid-gutter-width / -2));
+  @include clearfix();
+}
