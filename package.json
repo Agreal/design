@@ -1,9 +1,0 @@
-{
-  "name": "@agreal/design",
-  "version": "1.0.0",
-  "description": "Agreal's UI Design",
-  "author": "Agreal",
-  "license": "ISC",
-  "private": true,
-  "repository": "git@github.com:Agreal/design.git"
-}
